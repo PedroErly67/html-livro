@@ -13,7 +13,7 @@ body {
   align-items: center;
 }
 
-.container {
+.inicio {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,8 +27,8 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
-.butao {
-    display: flex;
+.btninic {
+  display: flex;
   justify-content: center;
   align-items: center;
   
