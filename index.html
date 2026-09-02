@@ -7,13 +7,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="inicio">
-        <h1 class="ttltela">Guia Backrooms</h1>
-        <h2 class="subtela">Como sobreviver</h2>
-    <div class="btninic">
-        <button class="btninic">ler</button>
-    </div>
+
+    <!-- Tela Inicial -->
+    <main class="inicio" id="inicio">
+        <header>
+            <h1 class="ttlinicio">Guia Backrooms</h1>
+            <p class="subinicio">Como sobreviver</p>
+        </header>
+
+        <div class="container-btn">
+            <button class="btninic" id="btninic-ler" type="button" aria-label="Ler guia de sobrevivência">Ler</button>
         </div>
+    </main>
+
+    <!-- Segunda Tela (Inicia oculta) -->
+    <section class="um esc" id="pagUm">
+        <div id="titulos">The Yellow Hell</div>
+        <div id="subtitulos">Level 0</div>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>
