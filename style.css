@@ -5,36 +5,99 @@
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
-  background-image: url('images/Wallpaper.webp');
+  min-height: 100vh;
+  width: 100%;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.inicio {
+/*fundos*/
+body.tema-inicio { background-image: url('images/Wallpaper.webp'); }
+body.tema-cap1 { background-image: url('images/Wallpaper.webp'); }
+body.tema-cap2 { background-image: url('images/images.jpg'); }
+body.tema-cap3 { background-image: url('images/Level_%21_Run_For_Your_Life.webp'); }
+body.tema-cap4 { background-image: url('images/FunLevel_Icon.webp'); }
+body.tema-cap5 { background-image: url('images/images\ \(1\).jpg'); }
+
+/* estilo do container */
+.container-nivel {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 40px 20px;
-  width: 450px;
-  min-height: 310px;
-  background-color: #D4CA68;
+  width: 900px;
+  max-width: 90%;
+  height: 600px;
   border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+  gap: 15px;
 }
 
-.btninic {
+/* --- caixas e letras --- */
+
+/* 1 */
+.tema-inicio .container-nivel,
+.tema-cap1 #cap1 {
+  background-color: #D4CA68;
+  color: #ffffff;
+}
+
+/* 2 */
+.tema-cap2 #cap2 {
+  background-color: #ece2be;
+  color: #00A396;
+}
+
+/* 3 */
+.tema-cap3 #cap3 {
+  background-color: #8E0509;
+  color: #FFFFFF;
+}
+
+/* 4 */
+.tema-cap4 #cap4 {
+  background-color: #ff6200;
+  color: #F5F5F5;
+}
+
+/* 5 */
+.tema-cap5 #cap5 {
+  background-color: #70777A;
+  color: #000000;
+}
+
+/* letras */
+.titulos {
+  font-family: 'Bree Serif', serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.subtitulos {
+  font-family: 'Bree Serif', serif;
+  font-size: 28px;
+  text-align: center;
+}
+
+.texto-nivel {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90px;
-  height: 60px;
-  background-color: #655C20;
+  padding: 10px 20px;
+  min-width: 110px;
+  height: 50px;
   border: none;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -42,57 +105,14 @@ body {
   font-family: sans-serif;
   font-size: 1.1rem;
   font-weight: bold;
-  text-decoration: none;
   cursor: pointer;
   transition: transform 0.2s, background-color 0.2s;
 }
 
-#btninic-ler:hover {
-  background-color: #4e4718;
+.btn:hover {
+  background-color: #000000;
   transform: scale(1.05);
 }
-
-.ttlinicio {
-  padding: 10px;
-  font-family: 'Bree Serif', serif;
-  font-size: 40px;
-  text-align: center;
-  color: #ffffff;
-}
-
-.subinicio {
-  padding: 5px;
-  font-family: 'Bree Serif', serif;
-  font-size: 30px;
-  text-align: center;
-  color: #ffffff;
-}
-
-.um {
-  display: flex;
-  padding: 40px 20px;
-  width: 830px;
-  min-height: 570px;
-  background-color: #D4CA68;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-}
-
-#titulos {
-  display: flex;
-  position: absolute;
-  font-family: 'Bree Serif', serif;
-  font-size: 40px;
-  text-align: center;
-}
-
-#subtitulos {
-  font-family: 'Bree Serif', serif;
-  font-size: 30px;
-  text-align: center;
-}
-
-cria um container pra arrumar os titulos, textos e botoes no lugar
 
 .esc {
   display: none !important;

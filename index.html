@@ -6,24 +6,58 @@
     <title>Guia Backrooms</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="body-app" class="tema-inicio">
 
-    <!-- Tela Inicial -->
-    <main class="inicio" id="inicio">
+    <!--Inicio-->
+    <main class="container-nivel" id="inicio">
         <header>
-            <h1 class="ttlinicio">Guia Backrooms</h1>
-            <p class="subinicio">Como sobreviver</p>
+            <h1 class="titulos">Guia Backrooms</h1>
+            <p class="subtitulos">Como sobreviver</p>
         </header>
 
         <div class="container-btn">
-            <button class="btninic" id="btninic-ler" type="button" aria-label="Ler guia de sobrevivência">Ler</button>
+            <button class="btn" id="btn-iniciar" type="button">Ler</button>
         </div>
     </main>
 
-    <!-- Segunda Tela (Inicia oculta) -->
-    <section class="um esc" id="pagUm">
-        <div id="titulos">The Yellow Hell</div>
-        <div id="subtitulos">Level 0</div>
+    <!--1-->
+    <section class="container-nivel esc" id="cap1">
+        <h1 class="titulos">The Yellow Hell</h1>
+        <h2 class="subtitulos">Level 0</h2>
+        <p class="texto-nivel">Paredes amarelas, carpete úmido e luzes fluorescentes zumbindo.</p>
+        <button class="btn btn-proximo" id="btn-cap1">Próximo Nível</button>
+    </section>
+
+    <!--2-->
+    <section class="container-nivel esc" id="cap2">
+        <h1 class="titulos">Habitable Zone</h1>
+        <h2 class="subtitulos">Level 1</h2>
+        <p class="texto-nivel">Galpão de concreto cinza com névoa e luzes piscando.</p>
+        <button class="btn btn-proximo" id="btn-cap2">Próximo Nível</button>
+    </section>
+
+    <!--3-->
+    <section class="container-nivel esc" id="cap3">
+        <h1 class="titulos">Pipe Dreams</h1>
+        <h2 class="subtitulos">Level 2</h2>
+        <p class="texto-nivel">Túneis escuros e tubulações com vapor escaldante.</p>
+        <button class="btn btn-proximo" id="btn-cap3">Próximo Nível</button>
+    </section>
+
+    <!--4-->
+    <section class="container-nivel esc" id="cap4">
+        <h1 class="titulos">Electrical Station</h1>
+        <h2 class="subtitulos">Level 3</h2>
+        <p class="texto-nivel">Corredores estreitos, maquinário barulhento e perigo iminente.</p>
+        <button class="btn btn-proximo" id="btn-cap4">Próximo Nível</button>
+    </section>
+
+    <!--5-->>
+    <section class="container-nivel esc" id="cap5">
+        <h1 class="titulos">Abandoned Office</h1>
+        <h2 class="subtitulos">Level 4</h2>
+        <p class="texto-nivel">Escritório vazio e calmo. Um dos poucos lugares seguros.</p>
+        <button class="btn btn-proximo" id="btn-cap5">Voltar ao Início</button>
     </section>
 
     <script src="script.js"></script>
