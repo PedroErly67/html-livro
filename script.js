@@ -1,6 +1,6 @@
 const bodyApp = document.getElementById('body-app');
 
-// Mapeamento das transições: [id atual, proximo id, tema body]
+// Mapeamento das transições: [botão, tela atual, próxima tela, tema do body]
 const pages = [
   { btn: 'btn-iniciar', atual: 'inicio', proximo: 'cap1', tema: 'tema-cap1' },
   { btn: 'btn-cap1',    atual: 'cap1',   proximo: 'cap2', tema: 'tema-cap2' },
@@ -10,17 +10,21 @@ const pages = [
   { btn: 'btn-cap5',    atual: 'cap5',   proximo: 'inicio', tema: 'tema-inicio' }
 ];
 
-//troca de tela
+// Troca de tela
 pages.forEach(passo => {
   const botao = document.getElementById(passo.btn);
   
   if (botao) {
     botao.addEventListener('click', () => {
-      // esconde a tela atual e mostra a próxima
-      document.getElementById(passo.atual).classList.add('esc');
-      document.getElementById(passo.proximo).classList.remove('esc');
+      // 1. Esconde a tela atual
+      const telaAtual = document.getElementById(passo.atual);
+      if (telaAtual) telaAtual.classList.add('esc');
+
+      // 2. Mostra a próxima tela
+      const proximaTela = document.getElementById(passo.proximo);
+      if (proximaTela) proximaTela.classList.remove('esc');
       
-      // atualiza o fundo e das paginas
+      // 3. Atualiza o tema do body sem apagar outras classes fixas (se houver)
       bodyApp.className = passo.tema;
     });
   }

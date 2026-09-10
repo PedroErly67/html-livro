@@ -15,97 +15,122 @@ body {
   align-items: center;
 }
 
-/*fundos*/
+/* --- FUNDOS DE TELA --- */
+/* Nota: Renomeie o arquivo 'images (1).jpg' para 'images-1.jpg' na sua pasta para evitar erros */
 body.tema-inicio { background-image: url('images/Wallpaper.webp'); }
-body.tema-cap1 { background-image: url('images/Wallpaper.webp'); }
-body.tema-cap2 { background-image: url('images/images.jpg'); }
-body.tema-cap3 { background-image: url('images/Level_%21_Run_For_Your_Life.webp'); }
-body.tema-cap4 { background-image: url('images/FunLevel_Icon.webp'); }
-body.tema-cap5 { background-image: url('images/images\ \(1\).jpg'); }
+body.tema-cap1   { background-image: url('images/Wallpaper.webp'); }
+body.tema-cap2   { background-image: url('images/images.jpg'); }
+body.tema-cap3   { background-image: url('images/level_run_for_your_life__by_poolroomsmeg_dfupi6b-fullview.jpg'); }
+body.tema-cap4   { background-image: url('images/FunLevel_Icon.webp'); }
+body.tema-cap5   { background-image: url('images/images\ \(1\).jpg'); }
 
-/* estilo do container */
+/* --- ESTRUTURA DOS CONTAINERS --- */
 .container-nivel {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 40px 20px;
+  padding: 50px 50px;
   width: 900px;
   max-width: 90%;
   height: 550px;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
   gap: 15px;
+  text-align: center;
 }
 
-/* --- caixas e letras --- */
-
-/* 1 */
-.tema-inicio .container-nivel,
-.tema-cap1 #cap1 {
-  background-color: #D4CA68;
-  color: #ffffff;
+.container-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 30px;
+  width: 530px;
+  max-width: 90%;
+  height: 450px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+  gap: 15px;
+  text-align: center;
 }
 
-/* 2 */
-.tema-cap2 #cap2 {
-  background-color: #ece2be;
-  color: #00A396;
+/* --- CORES E TEMAS POR CAPÍTULO --- */
+#inicio { background-color: #D4CA68; color: #ffffff; }
+#cap1   { background-color: #D4CA68; color: #ffffff; }
+#cap2   { background-color: #ece2be; color: #00ac9e; }
+#cap3   { background-color: #8E0509; color: #ffb9b9; }
+#cap4   { background-color: #ff6200; color: #F5F5F5; }
+#cap5   { background-color: #333434; color: #ffffff; }
+
+#cap1 div {background-color: #655C20;}
+#cap2 div {background-color: #17524d;}
+#cap3 div {background-color: #b3090e;}
+#cap4 div {background-color: #742900;}
+#cap5 div {background-color: #4c4d4d;}
+
+/* --- TIPOGRAFIA --- */
+.tituloinc{
+  font-family: 'Bree Serif', serif;
+  font-size: 6.7rem;
+  margin-bottom: 5px;
+  text-align: left;
+  align-self: flex-start;
+  width: 100%;
 }
 
-/* 3 */
-.tema-cap3 #cap3 {
-  background-color: #8E0509;
-  color: #FFFFFF;
+.subinic {
+  font-family: 'Bree Serif', serif;
+  font-size: 6.0rem;
+  margin-bottom: 5px;
+  text-align: center;
+  align-self: center;
+  width: 100%;
 }
 
-/* 4 */
-.tema-cap4 #cap4 {
-  background-color: #ff6200;
-  color: #F5F5F5;
-}
-
-/* 5 */
-.tema-cap5 #cap5 {
-  background-color: #70777A;
-  color: #000000;
-}
-
-/* letras */
 .titulos {
   font-family: 'Bree Serif', serif;
-  font-size: 40px;
-  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+  text-align: left;
+  align-self: flex-start;
+  width: 100%;
 }
 
 .subtitulos {
   font-family: 'Bree Serif', serif;
-  font-size: 28px;
-  text-align: center;
+  font-size: 1.5rem;
+  opacity: 0.9;
+  align-self: flex-start;
 }
 
 .texto-nivel {
   font-family: sans-serif;
   font-size: 1.2rem;
-  text-align: center;
-  margin: 15px 0;
+  line-height: 1.6;
+  margin: 20px 0;
 }
 
+/* --- BOTÕES --- */
 .btn {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 20px;
-  min-width: 110px;
-  height: 50px;
+  padding: 12px 24px;
+  min-width: 130px;
   border: none;
   border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  background-color: #1a1a1a;
+  color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
   font-family: sans-serif;
   font-size: 1.1rem;
   font-weight: bold;
   cursor: pointer;
-  transition: transform 0.2s, background-color 0.2s;
+}
+
+.btncap{
+  
 }
 
 .btn:hover {
@@ -113,6 +138,7 @@ body.tema-cap5 { background-image: url('images/images\ \(1\).jpg'); }
   transform: scale(1.05);
 }
 
+/* --- CLASSE UTILITÁRIA --- */
 .esc {
   display: none !important;
 }
