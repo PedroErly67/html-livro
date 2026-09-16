@@ -7,7 +7,12 @@ const pages = [
   { btn: 'btn-cap2',    atual: 'cap2',   proximo: 'cap3', tema: 'tema-cap3' },
   { btn: 'btn-cap3',    atual: 'cap3',   proximo: 'cap4', tema: 'tema-cap4' },
   { btn: 'btn-cap4',    atual: 'cap4',   proximo: 'cap5', tema: 'tema-cap5' },
-  { btn: 'btn-cap5',    atual: 'cap5',   proximo: 'inicio', tema: 'tema-inicio' }
+  { btn: 'btn-cap5',    atual: 'cap5',   proximo: 'inicio', tema: 'tema-inicio' },
+  { btn: 'voltar',    atual: 'cap1',   proximo: 'inicio', tema: 'tema-inicio' },
+  { btn: 'voltar',    atual: 'cap2',   proximo: 'inicio', tema: 'tema-inicio' },
+  { btn: 'voltar',    atual: 'cap3',   proximo: 'inicio', tema: 'tema-inicio' },
+  { btn: 'voltar',    atual: 'cap4',   proximo: 'inicio', tema: 'tema-inicio' },
+  { btn: 'voltar',    atual: 'cap5',   proximo: 'inicio', tema: 'tema-inicio' },
 ];
 
 // Troca de tela
