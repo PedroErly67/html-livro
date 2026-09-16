@@ -60,8 +60,8 @@ body.tema-cap5   { background-image: url('images/images\ \(1\).jpg'); }
 /* --- CORES E TEMAS POR CAPÍTULO --- */
 #inicio { background-color: #D4CA68; color: #ffffff; }
 #cap1   { background-color: #D4CA68; color: #ffffff; }
-#cap2   { background-color: #ece2be; color: #00ac9e; }
-#cap3   { background-color: #8E0509; color: #ffb9b9; }
+#cap2   { background-color: #ece2be; color: #2ba79c; }
+#cap3   { background-color: #8E0509; color: #ffe1e1; }
 #cap4   { background-color: #ff6200; color: #F5F5F5; }
 #cap5   { background-color: #333434; color: #ffffff; }
 
@@ -119,6 +119,7 @@ body.tema-cap5   { background-image: url('images/images\ \(1\).jpg'); }
   font-size: 1.3rem;
   line-height: 1.3;
   margin: 20px 0;
+  padding: 8px;
 }
 
 /* --- BOTÕES --- */
@@ -130,7 +131,7 @@ body.tema-cap5   { background-image: url('images/images\ \(1\).jpg'); }
   height: 50px;
   border: none;
   border-radius: 250px;
-  color: #000000;
+  color: #ffffff;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
   cursor: pointer;
   font-size:30px;
@@ -147,7 +148,7 @@ body.tema-cap5   { background-image: url('images/images\ \(1\).jpg'); }
   height: 50px;
   border: none;
   border-radius: 250px;
-  color: #000000;
+  color: #ffffff;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
   cursor: pointer;
   font-size:30px;
@@ -164,7 +165,7 @@ body.tema-cap5   { background-image: url('images/images\ \(1\).jpg'); }
   height: 50px;
   border: none;
   border-radius: 250px;
-  color: #000000;
+  color: #ffffff;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
   cursor: pointer;
   font-size:30px;
@@ -178,18 +179,47 @@ body.tema-cap5   { background-image: url('images/images\ \(1\).jpg'); }
   justify-content: center;
   align-items: center;
   padding: 12px 24px;
-  width: 70px;
-  height: 50px;
+  width: 150px;
+  height: 90px;
   border: none;
-  border-radius: 250px;
+  border-radius: 20px;
   background-color: #ffffff;
   color: #000000;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
   cursor: pointer;
-  font-size:20px;
+  font-size:30px;
 }
 
+#vlt1, #btn-cap1, #voltar1 {
+background-color: #655C20;
+}
+
+#vlt2, #btn-cap2, #voltar2 {
+  background-color: #17524d;
+  }
+
+#vlt3, #btn-cap3, #voltar3 {
+  background-color: #b3090e;
+  }
+#vlt4, #btn-cap4, #voltar4 {
+  background-color: #742900;
+  }
+
+#vlt5, #voltar5 {
+  background-color: #4c4d4d;
+  }
+
 .btn:hover {
+  background-color: #595959;
+  transform: scale(1.05);
+}
+
+.xis:hover {
+  background-color: #595959;
+  transform: scale(1.05);
+}
+
+.vlt:hover {
   background-color: #595959;
   transform: scale(1.05);
 }
