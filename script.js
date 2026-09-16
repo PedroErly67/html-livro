@@ -8,11 +8,16 @@ const pages = [
   { btn: 'btn-cap3',    atual: 'cap3',   proximo: 'cap4', tema: 'tema-cap4' },
   { btn: 'btn-cap4',    atual: 'cap4',   proximo: 'cap5', tema: 'tema-cap5' },
   { btn: 'btn-cap5',    atual: 'cap5',   proximo: 'inicio', tema: 'tema-inicio' },
-  { btn: 'voltar',    atual: 'cap1',   proximo: 'inicio', tema: 'tema-inicio' },
-  { btn: 'voltar',    atual: 'cap2',   proximo: 'inicio', tema: 'tema-inicio' },
-  { btn: 'voltar',    atual: 'cap3',   proximo: 'inicio', tema: 'tema-inicio' },
-  { btn: 'voltar',    atual: 'cap4',   proximo: 'inicio', tema: 'tema-inicio' },
-  { btn: 'voltar',    atual: 'cap5',   proximo: 'inicio', tema: 'tema-inicio' },
+  { btn: 'voltar1',    atual: 'cap1',   proximo: 'inicio', tema: 'tema-inicio' },
+  { btn: 'voltar2',    atual: 'cap2',   proximo: 'inicio', tema: 'tema-inicio' },
+  { btn: 'voltar3',    atual: 'cap3',   proximo: 'inicio', tema: 'tema-inicio' },
+  { btn: 'voltar4',    atual: 'cap4',   proximo: 'inicio', tema: 'tema-inicio' },
+  { btn: 'voltar5',    atual: 'cap5',   proximo: 'inicio', tema: 'tema-inicio' },
+  { btn: 'vlt1',    atual: 'cap1',   proximo: 'inicio', tema: 'tema-inicio' },
+  { btn: 'vlt2',    atual: 'cap2',   proximo: 'cap1', tema: 'tema-cap1' },
+  { btn: 'vlt3',    atual: 'cap3',   proximo: 'cap2', tema: 'tema-cap2' },
+  { btn: 'vlt4',    atual: 'cap4',   proximo: 'cap3', tema: 'tema-cap3' },
+  { btn: 'vlt5',    atual: 'cap5',   proximo: 'cap4', tema: 'tema-cap4' },
 ];
 
 // Troca de tela
