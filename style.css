@@ -183,7 +183,7 @@ body.tema-cap5   { background-image: url('images/images\ \(1\).jpg'); }
   height: 90px;
   border: none;
   border-radius: 20px;
-  background-color: #ffffff;
+  background-color: #655C20;
   color: #000000;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
   cursor: pointer;
@@ -191,26 +191,26 @@ body.tema-cap5   { background-image: url('images/images\ \(1\).jpg'); }
 }
 
 #vlt1, #btn-cap1, #voltar1 {
-background-color: #655C20;
+background-color: #423b10;
 }
 
 #vlt2, #btn-cap2, #voltar2 {
-  background-color: #17524d;
+  background-color: #11423e;
   }
 
 #vlt3, #btn-cap3, #voltar3 {
-  background-color: #b3090e;
+  background-color: #5b080b;
   }
 #vlt4, #btn-cap4, #voltar4 {
-  background-color: #742900;
+  background-color: #4e1b00;
   }
 
 #vlt5, #voltar5 {
-  background-color: #4c4d4d;
+  background-color: #323232;
   }
 
 .btn:hover {
-  background-color: #595959;
+  background-color: #383838;
   transform: scale(1.05);
 }
 
@@ -221,6 +221,11 @@ background-color: #655C20;
 
 .vlt:hover {
   background-color: #595959;
+  transform: scale(1.05);
+}
+
+.btninic:hover {
+  background-color: #433c0f;
   transform: scale(1.05);
 }
 
